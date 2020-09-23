@@ -2,5 +2,10 @@
 
 {% block title 'About | ' ~ parent() %}
 {% block body %}
-<footer> <p> &copy; copyright {{ 'now'|date('Y') }}</p></footer>
+
+<img class="rounded-full shadow-md mt-12 w-1/3" src="{{ asset('/img/mezz-o.jpg') }}" alt='Profile pic'/>
+<p class="text-gray-700 mt-5"> Built with ❤️ by mezz-o</p>
+<a class="mt-2 text-red-500 hover:text-red-600 underline" href= "{{ path('app_home') }}">Back to the homepage</a>
+
+
 {% endblock %}
